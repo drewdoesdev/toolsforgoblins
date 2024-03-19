@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Tools for Goblins',
   author: 'Andrew Taylor',
   headerTitle: 'Toolsforgoblins',
-  description: 'Online tools and advice for table top games',
+  description: 'Online tools and tips for D&D and Table Top RPGs by goblins, for goblins',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
