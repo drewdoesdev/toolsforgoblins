@@ -1,12 +1,20 @@
-interface Project {
-  title: string,
-  description: string,
-  href?: string,
-  imgSrc?: string,
+interface IProject {
+  title: string
+  description: string
+  href?: string
+  imgSrc?: string
+  tags?: string[]
 }
 
-const projectsData: Project[] = [
+const projectsData: IProject[] = [
   // TODO: Come back and fill this in with relevent suff.
+  {
+    title: 'Ubiquity Dice Roller',
+    description: `Online dice rollar for the Ubiquity System.  Used for games such as Hollow Earth Expedition, 
+    Desolation, and All for One: Regime Diabolique.`,
+    imgSrc: '/static/images/google.png',
+    href: 'https://www.ubiquitydiceroller.com/',
+  },
   {
     title: 'Dice for Goblins',
     description: `What if you could look up any information in the world? Webpages, images, videos
