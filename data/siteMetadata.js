@@ -6,9 +6,9 @@ const siteMetadata = {
   description: 'Online tools and tips for D&D and Table Top RPGs by goblins, for goblins',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
+  siteUrl: 'https://www.toolsforgoblins.com',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
-  siteLogo: '/static/images/goblin.png',
+  siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
   //mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'galavaxtheblack@gmail.com',
