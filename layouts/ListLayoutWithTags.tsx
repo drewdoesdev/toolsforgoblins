@@ -84,7 +84,6 @@ export default function ListLayoutWithTags({
           </h1>
         </div>
         <div className="flex sm:space-x-24">
-
           <div>
             <ul>
               {displayPosts.map((post) => {

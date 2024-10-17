@@ -1,12 +1,13 @@
+/* eslint-disable prettier/prettier */
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: 'Tools for Goblins',
   author: 'Andrew Taylor',
-  headerTitle: 'Toolsforgoblins',
-  description: 'Online tools and tips for D&D and Table Top RPGs by goblins, for goblins',
+  headerTitle: 'TOOLS FOR GOBLINS',
+  description: "Shiny online tools to boost your adventures, built by a clever goblin (me!)",
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
+  siteUrl: 'https://www.toolsforgoblins.com',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
