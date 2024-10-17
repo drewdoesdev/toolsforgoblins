@@ -1,7 +1,6 @@
 // @ts-check
 const { fontFamily } = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
-
 /** @type {import("tailwindcss/types").Config } */
 module.exports = {
   content: [
@@ -22,7 +21,9 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
+        sans: ['var(--font-ibm-plex-sans)', ...fontFamily.sans],
+        ibmPlexMono: ['IBM Plex Mono', 'monospace'],
+        ibmPlexSans: ['var(--font-ibm-plex-sans)'],
       },
       colors: {
         primary: colors.green,
@@ -47,6 +48,11 @@ module.exports = {
             },
             code: {
               color: theme('colors.indigo.500'),
+            },
+            h6: {
+              fontFamily: 'Patrick Hand, cursive',
+              fontWeight: '400',
+              fontStyle: 'normal',
             },
           },
         },
