@@ -92,11 +92,14 @@ export default function ListLayoutWithTags({
                 return (
                   <li key={path} className="py-5">
                     <article className="space-apart flex flex-col xl:flex-row">
-                      <div id="post-thumbnail" className="flex flex-col space-y-2 xl:space-y-0">
+                      <div
+                        id="post-thumbnail"
+                        className="flex flex-col space-y-2 xl:max-w-xs xl:space-y-0"
+                      >
                         <Image
                           src={images?.thumbnail ?? '/static/images/goblin.png'}
                           alt={title}
-                          width={300}
+                          width={1200}
                           height={250}
                           className="rounded-lg object-cover"
                         />
@@ -105,7 +108,7 @@ export default function ListLayoutWithTags({
                         id="post-description"
                         className="flex flex-col space-x-0 space-y-2 xl:space-x-2 xl:space-y-0"
                       >
-                        <dl>
+                        <dl className="space-y-2 xl:space-x-2 xl:space-y-0">
                           <dt className="sr-only">Published on</dt>
                           <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                             <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
