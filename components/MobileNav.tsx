@@ -10,6 +10,7 @@ const MobileNav = () => {
   const onToggleNav = () => {
     setNavShow((status) => {
       if (status) {
+        // eslint-disable-next-line react-compiler/react-compiler
         document.body.style.overflow = 'auto'
       } else {
         // Prevent scrolling
