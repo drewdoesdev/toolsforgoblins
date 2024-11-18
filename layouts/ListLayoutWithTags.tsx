@@ -88,21 +88,23 @@ export default function ListLayoutWithTags({
           <div>
             <ul>
               {displayPosts.map((post) => {
-                const { path, date, title, summary, tags, images, thumbnailImage } = post
+                const { path, date, title, summary, tags, images, postImage } = post
                 return (
                   <li key={path} className="py-5">
                     <article className="space-apart flex flex-col xl:flex-row">
                       <div
                         id="post-thumbnail"
-                        className="flex flex-col space-y-2 xl:max-w-xs xl:space-y-0"
+                        className="flex flex-col space-y-2 xl:mr-2 xl:max-w-40 xl:justify-center xl:space-x-3"
                       >
-                        <Image
-                          src={thumbnailImage ?? '/static/images/goblin.png'}
-                          alt={title}
-                          width={1200}
-                          height={250}
-                          className="rounded-lg object-cover"
-                        />
+                        <Link href={`/${path}`}>
+                          <Image
+                            src={postImage.src ?? '/static/images/goblin.png'}
+                            alt={postImage.alt ?? 'post image'}
+                            width={1200}
+                            height={350}
+                            className="rounded-lg object-cover"
+                          />
+                        </Link>
                       </div>
                       <div
                         id="post-description"
