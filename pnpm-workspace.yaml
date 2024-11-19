@@ -1,0 +1,17 @@
+packages:
+  # include packages in subfolders (change as required)
+  - '.contentlayer/**'
+  - '.github/**'
+  - '.husky/**'
+  - '.next/**'
+  - '.vscode/**'
+  - 'app/**'
+  - 'components/**'
+  - 'css/**'
+  - 'faq/**'
+  - 'features/**'
+  - 'layouts/**'
+  - 'public/**'
+  - 'scripts/**'
+  # if required, exclude directories
+  - '!**/__tests__/**'
