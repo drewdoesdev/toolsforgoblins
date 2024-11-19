@@ -1,7 +1,6 @@
 import { IDice } from '@/ubiquity-dice-roller/ubiquity-dice-roller-types'
 import { getDiceFace } from '@/ubiquity-dice-roller/utils/get-dice-face'
 
-
 export const Dice = ({
   diceType,
   staticVal,
@@ -9,7 +8,6 @@ export const Dice = ({
   hasRolled = false,
   onClick = () => null,
 }: IDice) => {
-
   //Set Faces
   const faces: string[] = getDiceFace(diceType)
 
@@ -24,8 +22,8 @@ export const Dice = ({
   }
 
   return (
-    <div className={} onClick={() => onClick()} data-dice-type={diceType}>
-      <span className={}>{renderRoll()}</span>
-    </div>
+    <button onClick={() => onClick()} data-dice-type={diceType}>
+      <span>{renderRoll()}</span>
+    </button>
   )
 }

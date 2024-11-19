@@ -1,9 +1,10 @@
+'use client'
 import { useEffect, useState } from 'react'
 import { Dice } from './components/Dice'
-import { IDice, DiceTypes} from './ubiquity-dice-roller-types'
+import { IDice, DiceTypes } from './ubiquity-dice-roller-types'
 import { getDiceFace } from './utils/get-dice-face'
 import Logo from './assets/coinflip.svg'
-import styles from './App.module.scss'
+import Image from 'next/image'
 import { getDiceTotal } from './utils/get-dice-total'
 
 export const UbiquityDiceRoller = () => {
@@ -41,7 +42,6 @@ export const UbiquityDiceRoller = () => {
     }
   }
 
-
   const rollDice = () => {
     const arrayCopy = diceArray
     arrayCopy.forEach((dice) => {
@@ -54,19 +54,19 @@ export const UbiquityDiceRoller = () => {
   const rollButtonText = hasRolled ? 'Reroll Dice' : 'Roll Dice'
 
   return (
-    <div className={styles.app}>
-      <div className={styles.content}>
-        <div className={styles.logo}>
-          <img src={Logo} alt="logo" width={125} />
+    <div className="flex h-auto min-h-screen w-screen items-start justify-center overflow-x-hidden overflow-y-scroll bg-[color:var(--cocoa-brown)] text-[color:var(--champagne)]">
+      <div className="flex h-full w-full max-w-[768px] flex-col flex-nowrap items-center justify-start p-8">
+        <div className="mt-8 pr-12">
+          <Image src={Logo} alt="logo" width={125} />
         </div>
-        <h1 className={styles.title}>Ubiquity Dice Roller</h1>
-        <p className={styles.instructions}>
-          <span className={styles.blue}>Blue dice</span> are a 50/50 roll.{' '}
-          <span className={styles.green}>Green dice</span> are the equivalent of 2 Blue dice, and{' '}
-          <span className={styles.red}>Red dice</span> the equivalent of 3 Blue dice.{' '}
-          <em>Click a dice to start rolling!</em>
+        <h1 className="my-8 text-4xl font-[var(--title-font)]">Ubiquity Dice Roller</h1>
+        <p className="mb-8 font-[var(--body-font)]">
+          <span className="text-[color:var(--sky-blue)]">Blue dice</span> are a 50/50 roll.{' '}
+          <span className="text-[color:var(--bright-green)]">Green dice</span> are the equivalent of
+          2 Blue dice, and <span className="text-[color:var(--bright-orange)]">Red dice</span> the
+          equivalent of 3 Blue dice. <em>Click a dice to start rolling!</em>
         </p>
-        <div className={styles.diceControls}>
+        <div className="mb-8 flex w-full items-center justify-center">
           <Dice
             diceType={DiceTypes.Single}
             staticVal="x1"
@@ -87,22 +87,26 @@ export const UbiquityDiceRoller = () => {
           />
         </div>
         {diceArray.length > 0 && !hasRolled && (
-          <button className={styles.rollDiceButton} onClick={rollDice}>
+          <button className="mb-8" onClick={rollDice}>
             {rollButtonText}
           </button>
         )}
         {!hasRolled && totalDice > 0 && (
-          <h2 className={styles.successes}>Total Dice: {totalDice}</h2>
+          <h2 className="my-3 mb-8 py-3 text-2xl font-[var(--body-font)]">
+            Total Dice: {totalDice}
+          </h2>
         )}
-        {hasRolled && <h2 className={styles.successes}>Successes: {successTotal}</h2>}
-        <div className={styles.diceResults}>
-          {diceArray.map((dice) => {
-            return <Dice {...dice} />
+        {hasRolled && (
+          <h2 className="my-3 mb-8 py-3 text-2xl font-[var(--body-font)]">
+            Successes: {successTotal}
+          </h2>
+        )}
+        <div className="mb-8 flex w-full flex-row flex-wrap items-center justify-center">
+          {diceArray.map((dice, index) => {
+            return <Dice key={`dice-${index}`} {...dice} />
           })}
         </div>
-        {hasRolled && (
-          <span className={styles.clearInstructions}>Reselect dice to start again</span>
-        )}
+        {hasRolled && <span>Reselect dice to start again</span>}
       </div>
     </div>
   )
