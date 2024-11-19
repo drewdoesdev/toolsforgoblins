@@ -7,7 +7,7 @@ module.exports = {
     node: true,
     es6: true,
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', "react-compiler"],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
@@ -29,6 +29,7 @@ module.exports = {
         }
       ],
     'react/react-in-jsx-scope': 'off',
+    "react-compiler/react-compiler": "error",
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
