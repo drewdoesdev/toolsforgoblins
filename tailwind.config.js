@@ -6,6 +6,7 @@ module.exports = {
   content: [
     './node_modules/pliny/**/*.js',
     './app/**/*.{js,ts,jsx,tsx}',
+    './features/**/*.{js,ts,jsx,tsx}',
     './pages/**/*.{js,ts,tsx}',
     './components/**/*.{js,ts,tsx}',
     './layouts/**/*.{js,ts,tsx}',
@@ -24,10 +25,20 @@ module.exports = {
         sans: ['var(--font-ibm-plex-sans)', ...fontFamily.sans],
         ibmPlexMono: ['IBM Plex Mono', 'monospace'],
         ibmPlexSans: ['var(--font-ibm-plex-sans)'],
+        adventure: ['Adventure', 'sans-serif'],
       },
       colors: {
         primary: colors.green,
         gray: colors.gray,
+      },
+      keyframes: {
+        'pop-in': {
+          '0%': { opacity: '0', transform: 'scale(0.1)', rotate: '0deg' },
+          '100%': { opacity: '1', transform: 'scale(1)', rotate: '45deg' },
+        },
+      },
+      animation: {
+        'pop-in': 'pop-in 0.3s ease-out forwards',
       },
       typography: ({ theme }) => ({
         DEFAULT: {

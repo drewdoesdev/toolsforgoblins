@@ -13,7 +13,14 @@ const projectsData: IProject[] = [
     description: `Online dice rollar for the Ubiquity System.  Used for games such as Hollow Earth: Expedition, 
     Desolation, and All for One: Regime Diabolique.`,
     imgSrc: '/static/images/hero-images/ubiquity-dice-roller.png',
-    href: 'https://www.ubiquitydiceroller.com/',
+    href: '/apps/ubiquity-dice-roller',
+    tags: [
+      'hollow-earth-expedition',
+      'desolation',
+      'all-for-one-regime-diabolique',
+      'ubiquity',
+      'dice-roller',
+    ],
   },
 ]
 
