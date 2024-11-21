@@ -1,18 +1,20 @@
 interface IProject {
+  id: string
   title: string
   description: string
   href?: string
-  imgSrc?: string
+  image?: string
   tags?: string[]
 }
 
-const projectsData: IProject[] = [
+export const projectsData: IProject[] = [
   // TODO: Come back and fill this in with relevent suff.
   {
+    id: 'ubiquity-dice-roller',
     title: 'Ubiquity Dice Roller',
     description: `Online dice rollar for the Ubiquity System.  Used for games such as Hollow Earth: Expedition, 
     Desolation, and All for One: Regime Diabolique.`,
-    imgSrc: '/static/images/hero-images/ubiquity-dice-roller.png',
+    image: '/static/images/hero-images/ubiquity-dice-roller.png',
     href: '/apps/ubiquity-dice-roller',
     tags: [
       'hollow-earth-expedition',
@@ -23,5 +25,3 @@ const projectsData: IProject[] = [
     ],
   },
 ]
-
-export default projectsData
