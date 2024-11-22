@@ -1,0 +1,21 @@
+{
+  "attachmentFolderPath": "./public/static/images/blog-images",
+  "userIgnoreFilters": [
+    "components/",
+    "css/",
+    "features/",
+    "faq/",
+    "layouts/",
+    "node_modules/",
+    "scripts/",
+    "data/authors/",
+    "public/tags/",
+    "public/static/favicons/",
+    "public/static/fonts/",
+    "public/static/images/canada/",
+    "public/static/images/canada/",
+    "public/static/images/ubiquity-dice-roller/"
+  ],
+  "newFileLocation": "folder",
+  "newFileFolderPath": "data/blog"
+}
