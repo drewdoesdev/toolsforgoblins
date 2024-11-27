@@ -1,0 +1,211 @@
+{
+  "main": {
+    "id": "5635cefec9957cbc",
+    "type": "split",
+    "children": [
+      {
+        "id": "61462bb0badd2451",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2587ab3faf709170",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "data/blog/seafaring-heritage.mdx",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "seafaring-heritage"
+            }
+          },
+          {
+            "id": "c04a9a3a6a3cb8b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "data/blog/seafaring-heritage.mdx",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "seafaring-heritage"
+            }
+          },
+          {
+            "id": "049ec0b2dbaf4f5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "data/blog/seafaring-heritage.mdx",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "seafaring-heritage"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "51559af5b4c98670",
+    "type": "split",
+    "children": [
+      {
+        "id": "5d56807eb9cbba5a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3ecca9a9cd1ca055",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "39f1fd0dbc5971ee",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ba6c0bde1cfb73d9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6ab50ce854fe8efd",
+    "type": "split",
+    "children": [
+      {
+        "id": "5a758e534067e6ed",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31cd2d2bc30c6c73",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "data/blog/seafaring-heritage.mdx",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for seafaring-heritage"
+            }
+          },
+          {
+            "id": "55b62bec6c3dc054",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "data/blog/seafaring-heritage.mdx",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from seafaring-heritage"
+            }
+          },
+          {
+            "id": "095d02f561c5282b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "0960e3aaf5613961",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "data/blog/seafaring-heritage.mdx"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of seafaring-heritage"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "049ec0b2dbaf4f5b",
+  "lastOpenFiles": [
+    "data/blog/review-hollow-earth-expedition.mdx",
+    "data/blog/seafaring-heritage.mdx",
+    "templates/blog-post.md",
+    "templates",
+    "public/static/images/ubiquity-dice-roller/coinflip.svg",
+    "public/static/images/ubiquity-dice-roller",
+    "public/static/fonts/Adventure-YGZ2.woff",
+    "public/static/fonts/Adventure-YGZ2.woff2",
+    "public/static/fonts/Adventure-YGZ2.ttf",
+    "public/static/fonts",
+    "features/ubiquity-dice-roller/utils/get-dice-total.ts",
+    "features/ubiquity-dice-roller/utils/get-dice-face.ts",
+    "features/ubiquity-dice-roller/utils",
+    "data/blog/test.md"
+  ]
+}
