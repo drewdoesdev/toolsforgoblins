@@ -1,4 +1,4 @@
-import { DiceTypes } from '@/ubiquity-dice-roller/ubiquity-dice-roller-types'
+import { DiceTypes } from '../ubiquity-dice-roller-types'
 
 export const getDiceTotal = (diceType: DiceTypes): number => {
   switch (diceType) {

@@ -1,7 +1,7 @@
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-import { projectsData } from '@/data/projectsData'
+import { projectsData } from '@/data/apps-data'
 import { formatDate } from 'pliny/utils/formatDate'
 import { AppsContainer } from '@/components/AppsContainer'
 

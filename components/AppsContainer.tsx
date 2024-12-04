@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '@/components/Card'
-import { projectsData } from '@/data/projectsData'
+import { projectsData } from '@/data/apps-data'
 
 export const AppsContainer = () => {
   return (

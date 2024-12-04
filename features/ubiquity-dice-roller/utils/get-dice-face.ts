@@ -1,7 +1,7 @@
-import { DiceTypes } from '@/ubiquity-dice-roller/ubiquity-dice-roller-types'
+import { DiceTypes } from '../ubiquity-dice-roller-types'
 
 export const getDiceFace = (diceType: DiceTypes) => {
-  const { single, double, tripple } = require('@/ubiquity-dice-roller/data/dice-faces.json')
+  const { single, double, tripple } = require('../data/dice-faces.json')
   switch (diceType) {
     case DiceTypes.Single:
       return single

@@ -57,7 +57,7 @@ export const UbiquityDiceRoller = () => {
             height={125}
           />
         </div>
-        <h1 className="font-adventure my-8 text-4xl">Ubiquity Dice Roller</h1>
+        <h1 className="my-8 font-adventure text-4xl">Ubiquity Dice Roller</h1>
         <p className="mb-8">
           <span className="font-bold text-blue-700">Blue dice</span> are a 50/50 roll.{' '}
           <span className="font-bold text-green-700">Green dice</span> are the equivalent of 2 Blue

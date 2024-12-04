@@ -1,5 +1,5 @@
-import { IDice } from '@/ubiquity-dice-roller/ubiquity-dice-roller-types'
-import { getDiceFace } from '@/ubiquity-dice-roller/utils/get-dice-face'
+import { IDice } from '../ubiquity-dice-roller-types'
+import { getDiceFace } from '../utils/get-dice-face'
 
 export const Dice = ({
   diceType,

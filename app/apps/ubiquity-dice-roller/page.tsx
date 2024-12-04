@@ -1,6 +1,6 @@
-import { UbiquityDiceRoller } from '@/ubiquity-dice-roller/UbiquityDiceRoller'
+import { UbiquityDiceRoller } from '@/features/ubiquity-dice-roller/UbiquityDiceRoller'
 import { genPageMetadata } from 'app/seo'
-import { projectsData } from '@/data/projectsData'
+import { projectsData } from '@/data/apps-data'
 
 const projectMetadata = projectsData.find((project) => project.id === 'ubiquity-dice-roller')
 
